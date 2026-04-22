@@ -8,4 +8,5 @@ package vless
 const (
 	None = "none"
 	XRV  = "xtls-rprx-vision"
+	XRM  = "xtls-rprx-mirage"
 )

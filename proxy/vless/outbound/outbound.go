@@ -290,6 +290,11 @@ func (h *Handler) Process(ctx context.Context, link *transport.Link, dialer inte
 		default:
 			panic("unknown VLESS request command")
 		}
+	case vless.XRM:
+		ob.CanSpliceCopy = 3
+		if request.Command == protocol.RequestCommandUDP {
+			return errors.New("xtls-rprx-mirage doesn't support UDP").AtInfo()
+		}
 	default:
 		ob.CanSpliceCopy = 3
 	}
@@ -312,6 +317,10 @@ func (h *Handler) Process(ctx context.Context, link *transport.Link, dialer inte
 	clientReader := link.Reader // .(*pipe.Reader)
 	clientWriter := link.Writer // .(*pipe.Writer)
 	trafficState := proxy.NewTrafficState(account.ID.Bytes())
+	var mirageSess *encoding.MirageSession
+	if requestAddons.Flow == vless.XRM {
+		mirageSess = encoding.NewMirageSession(account.ID.UUID(), true)
+	}
 	if request.Command == protocol.RequestCommandUDP && (requestAddons.Flow == vless.XRV || (h.cone && request.Port != 53 && request.Port != 443)) {
 		request.Command = protocol.RequestCommandMux
 		request.Address = net.DomainAddress("v1.mux.cool")
@@ -327,7 +336,12 @@ func (h *Handler) Process(ctx context.Context, link *transport.Link, dialer inte
 		}
 
 		// default: serverWriter := bufferWriter
-		serverWriter := encoding.EncodeBodyAddons(bufferWriter, request, requestAddons, trafficState, true, ctx, conn, ob)
+		var serverWriter buf.Writer
+		if requestAddons.Flow == vless.XRM {
+			serverWriter = encoding.NewMirageWriter(bufferWriter, mirageSess)
+		} else {
+			serverWriter = encoding.EncodeBodyAddons(bufferWriter, request, requestAddons, trafficState, true, ctx, conn, ob)
+		}
 		if request.Command == protocol.RequestCommandMux && request.Port == 666 {
 			serverWriter = xudp.NewPacketWriter(serverWriter, target, xudp.GetGlobalID(ctx))
 		}
@@ -387,9 +401,14 @@ func (h *Handler) Process(ctx context.Context, link *transport.Link, dialer inte
 		}
 
 		// default: serverReader := buf.NewReader(conn)
-		serverReader := encoding.DecodeBodyAddons(conn, request, responseAddons)
-		if requestAddons.Flow == vless.XRV {
-			serverReader = proxy.NewVisionReader(serverReader, trafficState, false, ctx, conn, input, rawInput, ob)
+		var serverReader buf.Reader
+		if requestAddons.Flow == vless.XRM {
+			serverReader = encoding.NewMirageReader(conn, mirageSess)
+		} else {
+			serverReader = encoding.DecodeBodyAddons(conn, request, responseAddons)
+			if requestAddons.Flow == vless.XRV {
+				serverReader = proxy.NewVisionReader(serverReader, trafficState, false, ctx, conn, input, rawInput, ob)
+			}
 		}
 		if request.Command == protocol.RequestCommandMux && request.Port == 666 {
 			if requestAddons.Flow == vless.XRV {

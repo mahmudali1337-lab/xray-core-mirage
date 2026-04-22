@@ -42,7 +42,7 @@ func (c *VLessInboundConfig) Build() (proto.Message, error) {
 	config := new(inbound.Config)
 	config.Clients = make([]*protocol.User, len(c.Clients))
 	switch c.Flow {
-	case vless.XRV, "":
+	case vless.XRV, vless.XRM, "":
 	default:
 		return nil, errors.New(`VLESS "settings.flow" doesn't support "` + c.Flow + `" in this version`)
 	}
@@ -65,7 +65,7 @@ func (c *VLessInboundConfig) Build() (proto.Message, error) {
 		switch account.Flow {
 		case "":
 			account.Flow = c.Flow
-		case vless.XRV:
+		case vless.XRV, vless.XRM:
 		default:
 			return nil, errors.New(`VLESS clients: "flow" doesn't support "` + account.Flow + `" in this version`)
 		}
@@ -313,7 +313,7 @@ func (c *VLessOutboundConfig) Build() (proto.Message, error) {
 
 			switch account.Flow {
 			case "":
-			case vless.XRV, vless.XRV + "-udp443":
+			case vless.XRV, vless.XRV + "-udp443", vless.XRM:
 			default:
 				return nil, errors.New(`VLESS users: "flow" doesn't support "` + account.Flow + `" in this version`)
 			}

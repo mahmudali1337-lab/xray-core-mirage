@@ -588,6 +588,14 @@ func (h *Handler) Process(ctx context.Context, network net.Network, connection s
 		} else {
 			return errors.New("account " + account.ID.String() + " is not able to use the flow " + requestAddons.Flow).AtWarning()
 		}
+	case vless.XRM:
+		if account.Flow != requestAddons.Flow {
+			return errors.New("account " + account.ID.String() + " is not able to use the flow " + requestAddons.Flow).AtWarning()
+		}
+		if request.Command == protocol.RequestCommandUDP {
+			return errors.New(requestAddons.Flow + " doesn't support UDP").AtWarning()
+		}
+		inbound.CanSpliceCopy = 3
 	case "":
 		inbound.CanSpliceCopy = 3
 		if account.Flow == vless.XRV && (request.Command == protocol.RequestCommandTCP || isMuxAndNotXUDP(request, first)) {
@@ -610,16 +618,28 @@ func (h *Handler) Process(ctx context.Context, network net.Network, connection s
 	}
 
 	trafficState := proxy.NewTrafficState(userSentID)
-	clientReader := encoding.DecodeBodyAddons(reader, request, requestAddons)
-	if requestAddons.Flow == vless.XRV {
-		clientReader = proxy.NewVisionReader(clientReader, trafficState, true, ctx, connection, input, rawInput, nil)
+	var mirageSess *encoding.MirageSession
+	var clientReader buf.Reader
+	if requestAddons.Flow == vless.XRM {
+		mirageSess = encoding.NewMirageSession(account.ID.UUID(), false)
+		clientReader = encoding.NewMirageReader(reader, mirageSess)
+	} else {
+		clientReader = encoding.DecodeBodyAddons(reader, request, requestAddons)
+		if requestAddons.Flow == vless.XRV {
+			clientReader = proxy.NewVisionReader(clientReader, trafficState, true, ctx, connection, input, rawInput, nil)
+		}
 	}
 
 	bufferWriter := buf.NewBufferedWriter(buf.NewWriter(connection))
 	if err := encoding.EncodeResponseHeader(bufferWriter, request, responseAddons); err != nil {
 		return errors.New("failed to encode response header").Base(err).AtWarning()
 	}
-	clientWriter := encoding.EncodeBodyAddons(bufferWriter, request, requestAddons, trafficState, false, ctx, connection, nil)
+	var clientWriter buf.Writer
+	if requestAddons.Flow == vless.XRM {
+		clientWriter = encoding.NewMirageWriter(bufferWriter, mirageSess)
+	} else {
+		clientWriter = encoding.EncodeBodyAddons(bufferWriter, request, requestAddons, trafficState, false, ctx, connection, nil)
+	}
 	bufferWriter.SetFlushNext()
 
 	if request.Command == protocol.RequestCommandRvs {

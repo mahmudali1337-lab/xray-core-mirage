@@ -1,0 +1,119 @@
+﻿{
+    "response":  {
+                     "total":  2,
+                     "internalSquads":  [
+                                            {
+                                                "uuid":  "b91d682b-b8a3-4676-9d61-0a2b9962deb4",
+                                                "viewPosition":  3,
+                                                "name":  "free",
+                                                "info":  {
+                                                             "membersCount":  14,
+                                                             "inboundsCount":  1
+                                                         },
+                                                "inbounds":  [
+                                                                 {
+                                                                     "uuid":  "8187e568-f32d-43ed-ac6c-b9b6341e21b7",
+                                                                     "profileUuid":  "77b27bf4-a9b1-4f9f-befe-1598f86b158c",
+                                                                     "tag":  "VLESS_TCP_REALITY_RU_WL_1",
+                                                                     "type":  "vless",
+                                                                     "network":  "raw",
+                                                                     "security":  "reality",
+                                                                     "port":  443,
+                                                                     "rawInbound":  {
+                                                                                        "tag":  "VLESS_TCP_REALITY_RU_WL_1",
+                                                                                        "port":  443,
+                                                                                        "listen":  "0.0.0.0",
+                                                                                        "protocol":  "vless",
+                                                                                        "settings":  {
+                                                                                                         "flow":  "xtls-rprx-vision",
+                                                                                                         "clients":  [
+
+                                                                                                                     ],
+                                                                                                         "decryption":  "none"
+                                                                                                     },
+                                                                                        "sniffing":  {
+                                                                                                         "enabled":  true,
+                                                                                                         "routeOnly":  false,
+                                                                                                         "destOverride":  [
+                                                                                                                              "http",
+                                                                                                                              "tls"
+                                                                                                                          ]
+                                                                                                     },
+                                                                                        "streamSettings":  {
+                                                                                                               "network":  "raw",
+                                                                                                               "security":  "reality",
+                                                                                                               "realitySettings":  {
+                                                                                                                                       "show":  false,
+                                                                                                                                       "xver":  0,
+                                                                                                                                       "target":  "www.samsung.com:443",
+                                                                                                                                       "spiderX":  "",
+                                                                                                                                       "shortIds":  "1c17f1198e7aadee",
+                                                                                                                                       "privateKey":  "J72Q70qfQGpbUvPgnB9GJanh37SFi0Uimmc0G7jPyK0",
+                                                                                                                                       "serverNames":  "www.samsung.com"
+                                                                                                                                   }
+                                                                                                           }
+                                                                                    }
+                                                                 }
+                                                             ],
+                                                "createdAt":  "2026-04-07T13:05:36.833Z",
+                                                "updatedAt":  "2026-04-07T13:05:36.832Z"
+                                            },
+                                            {
+                                                "uuid":  "b9f07244-8661-415e-bff5-d3a68e1fd70d",
+                                                "viewPosition":  4,
+                                                "name":  "wl1_vip",
+                                                "info":  {
+                                                             "membersCount":  2,
+                                                             "inboundsCount":  1
+                                                         },
+                                                "inbounds":  [
+                                                                 {
+                                                                     "uuid":  "8187e568-f32d-43ed-ac6c-b9b6341e21b7",
+                                                                     "profileUuid":  "77b27bf4-a9b1-4f9f-befe-1598f86b158c",
+                                                                     "tag":  "VLESS_TCP_REALITY_RU_WL_1",
+                                                                     "type":  "vless",
+                                                                     "network":  "raw",
+                                                                     "security":  "reality",
+                                                                     "port":  443,
+                                                                     "rawInbound":  {
+                                                                                        "tag":  "VLESS_TCP_REALITY_RU_WL_1",
+                                                                                        "port":  443,
+                                                                                        "listen":  "0.0.0.0",
+                                                                                        "protocol":  "vless",
+                                                                                        "settings":  {
+                                                                                                         "flow":  "xtls-rprx-vision",
+                                                                                                         "clients":  [
+
+                                                                                                                     ],
+                                                                                                         "decryption":  "none"
+                                                                                                     },
+                                                                                        "sniffing":  {
+                                                                                                         "enabled":  true,
+                                                                                                         "routeOnly":  false,
+                                                                                                         "destOverride":  [
+                                                                                                                              "http",
+                                                                                                                              "tls"
+                                                                                                                          ]
+                                                                                                     },
+                                                                                        "streamSettings":  {
+                                                                                                               "network":  "raw",
+                                                                                                               "security":  "reality",
+                                                                                                               "realitySettings":  {
+                                                                                                                                       "show":  false,
+                                                                                                                                       "xver":  0,
+                                                                                                                                       "target":  "www.samsung.com:443",
+                                                                                                                                       "spiderX":  "",
+                                                                                                                                       "shortIds":  "1c17f1198e7aadee",
+                                                                                                                                       "privateKey":  "J72Q70qfQGpbUvPgnB9GJanh37SFi0Uimmc0G7jPyK0",
+                                                                                                                                       "serverNames":  "www.samsung.com"
+                                                                                                                                   }
+                                                                                                           }
+                                                                                    }
+                                                                 }
+                                                             ],
+                                                "createdAt":  "2026-04-20T18:24:23.386Z",
+                                                "updatedAt":  "2026-04-20T18:24:23.384Z"
+                                            }
+                                        ]
+                 }
+}

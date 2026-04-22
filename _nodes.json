@@ -1,0 +1,274 @@
+﻿{
+    "response":  [
+                     {
+                         "uuid":  "521f1610-e202-4bba-be06-0b325efc9634",
+                         "name":  "🇩🇪 Germany Node #1",
+                         "address":  "85.121.52.37",
+                         "port":  2222,
+                         "isConnected":  true,
+                         "isConnecting":  false,
+                         "isDisabled":  false,
+                         "lastStatusChange":  "2026-04-21T09:50:35.664Z",
+                         "lastStatusMessage":  null,
+                         "trafficResetDay":  1,
+                         "consumptionMultiplier":  1,
+                         "isTrafficTrackingActive":  false,
+                         "trafficLimitBytes":  0,
+                         "trafficUsedBytes":  263728566,
+                         "notifyPercent":  0,
+                         "viewPosition":  2,
+                         "countryCode":  "DE",
+                         "tags":  [
+
+                                  ],
+                         "createdAt":  "2026-04-06T22:02:29.160Z",
+                         "updatedAt":  "2026-04-21T09:50:35.666Z",
+                         "configProfile":  {
+                                               "activeConfigProfileUuid":  "77b27bf4-a9b1-4f9f-befe-1598f86b158c",
+                                               "activeInbounds":  [
+                                                                      {
+                                                                          "uuid":  "8187e568-f32d-43ed-ac6c-b9b6341e21b7",
+                                                                          "profileUuid":  "77b27bf4-a9b1-4f9f-befe-1598f86b158c",
+                                                                          "tag":  "VLESS_TCP_REALITY_RU_WL_1",
+                                                                          "type":  "vless",
+                                                                          "network":  "raw",
+                                                                          "security":  "reality",
+                                                                          "port":  443,
+                                                                          "rawInbound":  {
+                                                                                             "tag":  "VLESS_TCP_REALITY_RU_WL_1",
+                                                                                             "port":  443,
+                                                                                             "listen":  "0.0.0.0",
+                                                                                             "protocol":  "vless",
+                                                                                             "settings":  "@{flow=xtls-rprx-vision; clients=System.Object[]; decryption=none}",
+                                                                                             "sniffing":  "@{enabled=True; routeOnly=False; destOverride=System.Object[]}",
+                                                                                             "streamSettings":  "@{network=raw; security=reality; realitySettings=}"
+                                                                                         }
+                                                                      }
+                                                                  ]
+                                           },
+                         "providerUuid":  null,
+                         "provider":  null,
+                         "activePluginUuid":  null,
+                         "xrayUptime":  171289,
+                         "usersOnline":  0,
+                         "system":  {
+                                        "info":  {
+                                                     "arch":  "x64",
+                                                     "cpus":  1,
+                                                     "cpuModel":  "AMD EPYC 9254 24-Core Processor",
+                                                     "memoryTotal":  2062729216,
+                                                     "hostname":  "remnanode",
+                                                     "platform":  "linux",
+                                                     "release":  "6.8.0-31-generic",
+                                                     "type":  "Linux",
+                                                     "version":  "#31-Ubuntu SMP PREEMPT_DYNAMIC Sat Apr 20 00:40:06 UTC 2024",
+                                                     "networkInterfaces":  [
+                                                                               "lo",
+                                                                               "eth0"
+                                                                           ]
+                                                 },
+                                        "stats":  {
+                                                      "memoryFree":  1576595456,
+                                                      "memoryUsed":  486133760,
+                                                      "uptime":  1596134.7,
+                                                      "loadAvg":  [
+                                                                      0,
+                                                                      0.01,
+                                                                      0.04
+                                                                  ],
+                                                      "interface":  {
+                                                                        "interface":  "eth0",
+                                                                        "rxBytesPerSec":  4826.347305389221,
+                                                                        "txBytesPerSec":  197.60479041916167,
+                                                                        "rxTotal":  28029875850,
+                                                                        "txTotal":  9558787467
+                                                                    }
+                                                  }
+                                    },
+                         "versions":  {
+                                          "xray":  "26.3.27",
+                                          "node":  "2.7.0"
+                                      }
+                     },
+                     {
+                         "uuid":  "8bfdc540-8cce-4976-b0d2-b3d21c7cf47f",
+                         "name":  "🇩🇪 Germany Node #2",
+                         "address":  "77.90.185.102",
+                         "port":  2222,
+                         "isConnected":  true,
+                         "isConnecting":  false,
+                         "isDisabled":  false,
+                         "lastStatusChange":  "2026-04-21T09:50:34.971Z",
+                         "lastStatusMessage":  null,
+                         "trafficResetDay":  1,
+                         "consumptionMultiplier":  1,
+                         "isTrafficTrackingActive":  false,
+                         "trafficLimitBytes":  0,
+                         "trafficUsedBytes":  325606325,
+                         "notifyPercent":  0,
+                         "viewPosition":  3,
+                         "countryCode":  "DE",
+                         "tags":  [
+
+                                  ],
+                         "createdAt":  "2026-04-07T12:07:49.071Z",
+                         "updatedAt":  "2026-04-22T14:18:00.239Z",
+                         "configProfile":  {
+                                               "activeConfigProfileUuid":  "77b27bf4-a9b1-4f9f-befe-1598f86b158c",
+                                               "activeInbounds":  [
+                                                                      {
+                                                                          "uuid":  "8187e568-f32d-43ed-ac6c-b9b6341e21b7",
+                                                                          "profileUuid":  "77b27bf4-a9b1-4f9f-befe-1598f86b158c",
+                                                                          "tag":  "VLESS_TCP_REALITY_RU_WL_1",
+                                                                          "type":  "vless",
+                                                                          "network":  "raw",
+                                                                          "security":  "reality",
+                                                                          "port":  443,
+                                                                          "rawInbound":  {
+                                                                                             "tag":  "VLESS_TCP_REALITY_RU_WL_1",
+                                                                                             "port":  443,
+                                                                                             "listen":  "0.0.0.0",
+                                                                                             "protocol":  "vless",
+                                                                                             "settings":  "@{flow=xtls-rprx-vision; clients=System.Object[]; decryption=none}",
+                                                                                             "sniffing":  "@{enabled=True; routeOnly=False; destOverride=System.Object[]}",
+                                                                                             "streamSettings":  "@{network=raw; security=reality; realitySettings=}"
+                                                                                         }
+                                                                      }
+                                                                  ]
+                                           },
+                         "providerUuid":  null,
+                         "provider":  null,
+                         "activePluginUuid":  null,
+                         "xrayUptime":  171289,
+                         "usersOnline":  0,
+                         "system":  {
+                                        "info":  {
+                                                     "arch":  "x64",
+                                                     "cpus":  2,
+                                                     "cpuModel":  "Intel(R) Xeon(R) Silver 4214R CPU @ 2.40GHz",
+                                                     "memoryTotal":  6213758976,
+                                                     "hostname":  "remnanode",
+                                                     "platform":  "linux",
+                                                     "release":  "6.8.0-106-generic",
+                                                     "type":  "Linux",
+                                                     "version":  "#106-Ubuntu SMP PREEMPT_DYNAMIC Fri Mar  6 07:58:08 UTC 2026",
+                                                     "networkInterfaces":  [
+                                                                               "lo",
+                                                                               "eth0"
+                                                                           ]
+                                                 },
+                                        "stats":  {
+                                                      "memoryFree":  5494382592,
+                                                      "memoryUsed":  719376384,
+                                                      "uptime":  2103367.49,
+                                                      "loadAvg":  [
+                                                                      0.01,
+                                                                      0.02,
+                                                                      0
+                                                                  ],
+                                                      "interface":  {
+                                                                        "interface":  "eth0",
+                                                                        "rxBytesPerSec":  267.73226773226776,
+                                                                        "txBytesPerSec":  197.8021978021978,
+                                                                        "rxTotal":  3146537320,
+                                                                        "txTotal":  2177746450
+                                                                    }
+                                                  }
+                                    },
+                         "versions":  {
+                                          "xray":  "26.3.27",
+                                          "node":  "2.7.0"
+                                      }
+                     },
+                     {
+                         "uuid":  "955e2b83-b61c-49a9-b03b-9178c8b55d9d",
+                         "name":  "🇳🇱 Netherlands Node #1",
+                         "address":  "45.82.95.45",
+                         "port":  2222,
+                         "isConnected":  true,
+                         "isConnecting":  false,
+                         "isDisabled":  false,
+                         "lastStatusChange":  "2026-04-22T19:10:01.928Z",
+                         "lastStatusMessage":  null,
+                         "trafficResetDay":  1,
+                         "consumptionMultiplier":  1,
+                         "isTrafficTrackingActive":  false,
+                         "trafficLimitBytes":  0,
+                         "trafficUsedBytes":  2545621221,
+                         "notifyPercent":  0,
+                         "viewPosition":  4,
+                         "countryCode":  "NL",
+                         "tags":  [
+
+                                  ],
+                         "createdAt":  "2026-04-07T12:10:24.719Z",
+                         "updatedAt":  "2026-04-22T19:10:01.929Z",
+                         "configProfile":  {
+                                               "activeConfigProfileUuid":  "77b27bf4-a9b1-4f9f-befe-1598f86b158c",
+                                               "activeInbounds":  [
+                                                                      {
+                                                                          "uuid":  "8187e568-f32d-43ed-ac6c-b9b6341e21b7",
+                                                                          "profileUuid":  "77b27bf4-a9b1-4f9f-befe-1598f86b158c",
+                                                                          "tag":  "VLESS_TCP_REALITY_RU_WL_1",
+                                                                          "type":  "vless",
+                                                                          "network":  "raw",
+                                                                          "security":  "reality",
+                                                                          "port":  443,
+                                                                          "rawInbound":  {
+                                                                                             "tag":  "VLESS_TCP_REALITY_RU_WL_1",
+                                                                                             "port":  443,
+                                                                                             "listen":  "0.0.0.0",
+                                                                                             "protocol":  "vless",
+                                                                                             "settings":  "@{flow=xtls-rprx-vision; clients=System.Object[]; decryption=none}",
+                                                                                             "sniffing":  "@{enabled=True; routeOnly=False; destOverride=System.Object[]}",
+                                                                                             "streamSettings":  "@{network=raw; security=reality; realitySettings=}"
+                                                                                         }
+                                                                      }
+                                                                  ]
+                                           },
+                         "providerUuid":  null,
+                         "provider":  null,
+                         "activePluginUuid":  null,
+                         "xrayUptime":  249,
+                         "usersOnline":  0,
+                         "system":  {
+                                        "info":  {
+                                                     "arch":  "x64",
+                                                     "cpus":  1,
+                                                     "cpuModel":  "AMD Ryzen 9 9950X 16-Core Processor",
+                                                     "memoryTotal":  4005982208,
+                                                     "hostname":  "remnanode",
+                                                     "platform":  "linux",
+                                                     "release":  "6.8.0-31-generic",
+                                                     "type":  "Linux",
+                                                     "version":  "#31-Ubuntu SMP PREEMPT_DYNAMIC Sat Apr 20 00:40:06 UTC 2024",
+                                                     "networkInterfaces":  [
+                                                                               "lo",
+                                                                               "eth0"
+                                                                           ]
+                                                 },
+                                        "stats":  {
+                                                      "memoryFree":  3320471552,
+                                                      "memoryUsed":  685510656,
+                                                      "uptime":  1458279.87,
+                                                      "loadAvg":  [
+                                                                      0.01,
+                                                                      0.1,
+                                                                      0.07
+                                                                  ],
+                                                      "interface":  {
+                                                                        "interface":  "eth0",
+                                                                        "rxBytesPerSec":  36796.2037962038,
+                                                                        "txBytesPerSec":  38420.57942057942,
+                                                                        "rxTotal":  53950996355,
+                                                                        "txTotal":  52743720453
+                                                                    }
+                                                  }
+                                    },
+                         "versions":  {
+                                          "xray":  "26.4.17",
+                                          "node":  "2.7.0"
+                                      }
+                     }
+                 ]
+}

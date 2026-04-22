@@ -1,0 +1,104 @@
+﻿{
+    "response":  {
+                     "uuid":  "955e2b83-b61c-49a9-b03b-9178c8b55d9d",
+                     "name":  "🇳🇱 Netherlands Node #1",
+                     "address":  "45.82.95.45",
+                     "port":  2222,
+                     "isConnected":  true,
+                     "isConnecting":  false,
+                     "isDisabled":  false,
+                     "lastStatusChange":  "2026-04-22T19:10:01.928Z",
+                     "lastStatusMessage":  null,
+                     "trafficResetDay":  1,
+                     "consumptionMultiplier":  1,
+                     "isTrafficTrackingActive":  false,
+                     "trafficLimitBytes":  0,
+                     "trafficUsedBytes":  2545621221,
+                     "notifyPercent":  0,
+                     "viewPosition":  4,
+                     "countryCode":  "NL",
+                     "tags":  [
+
+                              ],
+                     "createdAt":  "2026-04-07T12:10:24.719Z",
+                     "updatedAt":  "2026-04-22T19:19:39.266Z",
+                     "configProfile":  {
+                                           "activeConfigProfileUuid":  "b654e528-a52a-4d12-b8b5-d56f3f748e8f",
+                                           "activeInbounds":  [
+                                                                  {
+                                                                      "uuid":  "b6983d93-5d96-4b94-959a-08deb88a51ee",
+                                                                      "profileUuid":  "b654e528-a52a-4d12-b8b5-d56f3f748e8f",
+                                                                      "tag":  "VLESS_TCP_REALITY_MIRAGE_NL",
+                                                                      "type":  "vless",
+                                                                      "network":  "raw",
+                                                                      "security":  "reality",
+                                                                      "port":  443,
+                                                                      "rawInbound":  {
+                                                                                         "tag":  "VLESS_TCP_REALITY_MIRAGE_NL",
+                                                                                         "port":  443,
+                                                                                         "listen":  "0.0.0.0",
+                                                                                         "protocol":  "vless",
+                                                                                         "settings":  {
+                                                                                                          "flow":  "xtls-rprx-mirage",
+                                                                                                          "clients":  "",
+                                                                                                          "decryption":  "none"
+                                                                                                      },
+                                                                                         "sniffing":  {
+                                                                                                          "enabled":  true,
+                                                                                                          "routeOnly":  false,
+                                                                                                          "destOverride":  "http tls"
+                                                                                                      },
+                                                                                         "streamSettings":  {
+                                                                                                                "network":  "raw",
+                                                                                                                "security":  "reality",
+                                                                                                                "realitySettings":  "@{show=False; xver=0; target=www.samsung.com:443; spiderX=; shortIds=System.Object[]; privateKey=J72Q70qfQGpbUvPgnB9GJanh37SFi0Uimmc0G7jPyK0; serverNames=System.Object[]}"
+                                                                                                            }
+                                                                                     }
+                                                                  }
+                                                              ]
+                                       },
+                     "providerUuid":  null,
+                     "provider":  null,
+                     "activePluginUuid":  null,
+                     "xrayUptime":  569,
+                     "usersOnline":  0,
+                     "system":  {
+                                    "info":  {
+                                                 "arch":  "x64",
+                                                 "cpus":  1,
+                                                 "cpuModel":  "AMD Ryzen 9 9950X 16-Core Processor",
+                                                 "memoryTotal":  4005982208,
+                                                 "hostname":  "remnanode",
+                                                 "platform":  "linux",
+                                                 "release":  "6.8.0-31-generic",
+                                                 "type":  "Linux",
+                                                 "version":  "#31-Ubuntu SMP PREEMPT_DYNAMIC Sat Apr 20 00:40:06 UTC 2024",
+                                                 "networkInterfaces":  [
+                                                                           "lo",
+                                                                           "eth0"
+                                                                       ]
+                                             },
+                                    "stats":  {
+                                                  "memoryFree":  3329785856,
+                                                  "memoryUsed":  676196352,
+                                                  "uptime":  1458599.84,
+                                                  "loadAvg":  [
+                                                                  0,
+                                                                  0.03,
+                                                                  0.04
+                                                              ],
+                                                  "interface":  {
+                                                                    "interface":  "eth0",
+                                                                    "rxBytesPerSec":  37294.7052947053,
+                                                                    "txBytesPerSec":  37860.13986013986,
+                                                                    "rxTotal":  53963186638,
+                                                                    "txTotal":  52756122302
+                                                                }
+                                              }
+                                },
+                     "versions":  {
+                                      "xray":  "26.4.17",
+                                      "node":  "2.7.0"
+                                  }
+                 }
+}

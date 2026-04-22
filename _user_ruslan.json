@@ -1,0 +1,547 @@
+﻿{
+    "response":  {
+                     "total":  14,
+                     "users":  [
+                                   {
+                                       "uuid":  "4c0f25ee-e73b-48ac-a6f0-cee96eb68066",
+                                       "id":  23,
+                                       "shortUuid":  "Kjey3e8yEbrxr6aA",
+                                       "username":  "ruslan1",
+                                       "status":  "ACTIVE",
+                                       "trafficLimitBytes":  0,
+                                       "trafficLimitStrategy":  "NO_RESET",
+                                       "expireAt":  "2126-04-20T18:17:36.155Z",
+                                       "telegramId":  null,
+                                       "email":  null,
+                                       "description":  null,
+                                       "tag":  null,
+                                       "hwidDeviceLimit":  null,
+                                       "externalSquadUuid":  null,
+                                       "trojanPassword":  "W98C7NVeqULdL4oPUeK2zFYpQM5PcEzb",
+                                       "vlessUuid":  "e905e3d9-d86d-4c88-9428-ba907b2cefab",
+                                       "ssPassword":  "mqMc1959xoNzS8a2-0YDsLBdNKkZcFzs",
+                                       "lastTriggeredThreshold":  0,
+                                       "subRevokedAt":  null,
+                                       "lastTrafficResetAt":  null,
+                                       "createdAt":  "2026-04-20T18:17:36.255Z",
+                                       "updatedAt":  "2026-04-20T18:17:36.254Z",
+                                       "subscriptionUrl":  "https://pp.komaru.sh/api/sub/Kjey3e8yEbrxr6aA",
+                                       "activeInternalSquads":  [
+                                                                    {
+                                                                        "uuid":  "b91d682b-b8a3-4676-9d61-0a2b9962deb4",
+                                                                        "name":  "free"
+                                                                    },
+                                                                    {
+                                                                        "uuid":  "b9f07244-8661-415e-bff5-d3a68e1fd70d",
+                                                                        "name":  "wl1_vip"
+                                                                    }
+                                                                ],
+                                       "userTraffic":  {
+                                                           "usedTrafficBytes":  226077,
+                                                           "lifetimeUsedTrafficBytes":  226077,
+                                                           "onlineAt":  "2026-04-20T19:42:15.119Z",
+                                                           "lastConnectedNodeUuid":  "955e2b83-b61c-49a9-b03b-9178c8b55d9d",
+                                                           "firstConnectedAt":  "2026-04-20T18:59:45.121Z"
+                                                       }
+                                   },
+                                   {
+                                       "uuid":  "b1c7eb4e-c214-40fa-8858-33e15283ff2f",
+                                       "id":  22,
+                                       "shortUuid":  "ZL7P0EZA4VSf6mSL",
+                                       "username":  "tg_1303191609",
+                                       "status":  "ACTIVE",
+                                       "trafficLimitBytes":  0,
+                                       "trafficLimitStrategy":  "NO_RESET",
+                                       "expireAt":  "2126-04-20T17:56:34.123Z",
+                                       "telegramId":  1303191609,
+                                       "email":  null,
+                                       "description":  null,
+                                       "tag":  null,
+                                       "hwidDeviceLimit":  null,
+                                       "externalSquadUuid":  null,
+                                       "trojanPassword":  "UMcSf6to61co0TBzusabbNksQKxVxZQp",
+                                       "vlessUuid":  "5d1716c1-26ee-4b99-92ba-32ae2c796ff0",
+                                       "ssPassword":  "cbb2QvvZw-bYwNdwno7nNF9TvVaVxThN",
+                                       "lastTriggeredThreshold":  0,
+                                       "subRevokedAt":  null,
+                                       "lastTrafficResetAt":  null,
+                                       "createdAt":  "2026-04-20T17:56:34.151Z",
+                                       "updatedAt":  "2026-04-20T17:56:34.149Z",
+                                       "subscriptionUrl":  "https://pp.komaru.sh/api/sub/ZL7P0EZA4VSf6mSL",
+                                       "activeInternalSquads":  [
+                                                                    {
+                                                                        "uuid":  "b91d682b-b8a3-4676-9d61-0a2b9962deb4",
+                                                                        "name":  "free"
+                                                                    }
+                                                                ],
+                                       "userTraffic":  {
+                                                           "usedTrafficBytes":  0,
+                                                           "lifetimeUsedTrafficBytes":  0,
+                                                           "onlineAt":  null,
+                                                           "lastConnectedNodeUuid":  null,
+                                                           "firstConnectedAt":  null
+                                                       }
+                                   },
+                                   {
+                                       "uuid":  "10da57c6-d668-40af-9f32-ebc8e944f66e",
+                                       "id":  21,
+                                       "shortUuid":  "mtHm8KEfyrKUuN3S",
+                                       "username":  "tg_119229974",
+                                       "status":  "ACTIVE",
+                                       "trafficLimitBytes":  0,
+                                       "trafficLimitStrategy":  "NO_RESET",
+                                       "expireAt":  "2126-04-20T17:51:32.518Z",
+                                       "telegramId":  119229974,
+                                       "email":  null,
+                                       "description":  null,
+                                       "tag":  null,
+                                       "hwidDeviceLimit":  null,
+                                       "externalSquadUuid":  null,
+                                       "trojanPassword":  "6Mj-nf948_LhS7enhDD-W3-v0dx2ZAEh",
+                                       "vlessUuid":  "1797a280-8254-4e52-a408-761acd049334",
+                                       "ssPassword":  "BtRfn1XvVzQbjv0s1fwwU57w4hckXdbf",
+                                       "lastTriggeredThreshold":  0,
+                                       "subRevokedAt":  null,
+                                       "lastTrafficResetAt":  null,
+                                       "createdAt":  "2026-04-20T17:51:32.554Z",
+                                       "updatedAt":  "2026-04-20T17:51:32.552Z",
+                                       "subscriptionUrl":  "https://pp.komaru.sh/api/sub/mtHm8KEfyrKUuN3S",
+                                       "activeInternalSquads":  [
+                                                                    {
+                                                                        "uuid":  "b91d682b-b8a3-4676-9d61-0a2b9962deb4",
+                                                                        "name":  "free"
+                                                                    }
+                                                                ],
+                                       "userTraffic":  {
+                                                           "usedTrafficBytes":  36751976,
+                                                           "lifetimeUsedTrafficBytes":  36751976,
+                                                           "onlineAt":  "2026-04-21T04:47:00.168Z",
+                                                           "lastConnectedNodeUuid":  "955e2b83-b61c-49a9-b03b-9178c8b55d9d",
+                                                           "firstConnectedAt":  "2026-04-20T17:52:30.188Z"
+                                                       }
+                                   },
+                                   {
+                                       "uuid":  "b1df0faf-0701-4eb5-87db-0d3d32309ec5",
+                                       "id":  20,
+                                       "shortUuid":  "LHNYK9XLe_FmPd86",
+                                       "username":  "tg_7027060342",
+                                       "status":  "ACTIVE",
+                                       "trafficLimitBytes":  0,
+                                       "trafficLimitStrategy":  "NO_RESET",
+                                       "expireAt":  "2126-04-12T19:39:10.264Z",
+                                       "telegramId":  7027060342,
+                                       "email":  null,
+                                       "description":  null,
+                                       "tag":  null,
+                                       "hwidDeviceLimit":  null,
+                                       "externalSquadUuid":  null,
+                                       "trojanPassword":  "hEzEKe8yopnSCGWLbNBET0Y0GuNxt6Xy",
+                                       "vlessUuid":  "eb0392fd-eec2-41f2-a66e-42cb308d4d08",
+                                       "ssPassword":  "R2w3xNBNY37Q09eQw0s5MDC1w7bMVy_7",
+                                       "lastTriggeredThreshold":  0,
+                                       "subRevokedAt":  null,
+                                       "lastTrafficResetAt":  null,
+                                       "createdAt":  "2026-04-12T19:39:10.294Z",
+                                       "updatedAt":  "2026-04-12T19:39:10.293Z",
+                                       "subscriptionUrl":  "https://pp.komaru.sh/api/sub/LHNYK9XLe_FmPd86",
+                                       "activeInternalSquads":  [
+                                                                    {
+                                                                        "uuid":  "b91d682b-b8a3-4676-9d61-0a2b9962deb4",
+                                                                        "name":  "free"
+                                                                    }
+                                                                ],
+                                       "userTraffic":  {
+                                                           "usedTrafficBytes":  0,
+                                                           "lifetimeUsedTrafficBytes":  0,
+                                                           "onlineAt":  null,
+                                                           "lastConnectedNodeUuid":  null,
+                                                           "firstConnectedAt":  null
+                                                       }
+                                   },
+                                   {
+                                       "uuid":  "540982d1-bf0c-4388-936a-bd44dfd26e70",
+                                       "id":  19,
+                                       "shortUuid":  "8oPz6ZEUnpB-by4-",
+                                       "username":  "tg_911254264",
+                                       "status":  "ACTIVE",
+                                       "trafficLimitBytes":  0,
+                                       "trafficLimitStrategy":  "NO_RESET",
+                                       "expireAt":  "2126-04-10T19:46:51.910Z",
+                                       "telegramId":  911254264,
+                                       "email":  null,
+                                       "description":  null,
+                                       "tag":  null,
+                                       "hwidDeviceLimit":  null,
+                                       "externalSquadUuid":  null,
+                                       "trojanPassword":  "SgHdB01xsoaz94vYZuCqnXGau7hHe18r",
+                                       "vlessUuid":  "58a431ce-7234-4c63-abbf-ca2f51546511",
+                                       "ssPassword":  "Pkwron4tVMYjLE5m8A2hs68ZsWYnw9jM",
+                                       "lastTriggeredThreshold":  0,
+                                       "subRevokedAt":  null,
+                                       "lastTrafficResetAt":  null,
+                                       "createdAt":  "2026-04-10T19:46:51.930Z",
+                                       "updatedAt":  "2026-04-10T19:46:51.929Z",
+                                       "subscriptionUrl":  "https://pp.komaru.sh/api/sub/8oPz6ZEUnpB-by4-",
+                                       "activeInternalSquads":  [
+                                                                    {
+                                                                        "uuid":  "b91d682b-b8a3-4676-9d61-0a2b9962deb4",
+                                                                        "name":  "free"
+                                                                    }
+                                                                ],
+                                       "userTraffic":  {
+                                                           "usedTrafficBytes":  0,
+                                                           "lifetimeUsedTrafficBytes":  0,
+                                                           "onlineAt":  null,
+                                                           "lastConnectedNodeUuid":  null,
+                                                           "firstConnectedAt":  null
+                                                       }
+                                   },
+                                   {
+                                       "uuid":  "259edd79-db1c-49df-882f-b68d870bad00",
+                                       "id":  18,
+                                       "shortUuid":  "LtzZ5oh6HpBd3SBr",
+                                       "username":  "tg_8590551011",
+                                       "status":  "ACTIVE",
+                                       "trafficLimitBytes":  0,
+                                       "trafficLimitStrategy":  "NO_RESET",
+                                       "expireAt":  "2126-04-10T15:17:07.586Z",
+                                       "telegramId":  8590551011,
+                                       "email":  null,
+                                       "description":  null,
+                                       "tag":  null,
+                                       "hwidDeviceLimit":  null,
+                                       "externalSquadUuid":  null,
+                                       "trojanPassword":  "_6_BoV62fx4GC5khn-95-0e02vW-QuWR",
+                                       "vlessUuid":  "c5b9137b-2d58-4daf-ac99-16131e7352fc",
+                                       "ssPassword":  "vrHpW52EEzRhw_kCXBd3472_2cJz5cGk",
+                                       "lastTriggeredThreshold":  0,
+                                       "subRevokedAt":  null,
+                                       "lastTrafficResetAt":  null,
+                                       "createdAt":  "2026-04-10T15:17:07.608Z",
+                                       "updatedAt":  "2026-04-10T15:17:07.607Z",
+                                       "subscriptionUrl":  "https://pp.komaru.sh/api/sub/LtzZ5oh6HpBd3SBr",
+                                       "activeInternalSquads":  [
+                                                                    {
+                                                                        "uuid":  "b91d682b-b8a3-4676-9d61-0a2b9962deb4",
+                                                                        "name":  "free"
+                                                                    }
+                                                                ],
+                                       "userTraffic":  {
+                                                           "usedTrafficBytes":  127857671,
+                                                           "lifetimeUsedTrafficBytes":  127857671,
+                                                           "onlineAt":  "2026-04-22T14:17:45.191Z",
+                                                           "lastConnectedNodeUuid":  "8bfdc540-8cce-4976-b0d2-b3d21c7cf47f",
+                                                           "firstConnectedAt":  "2026-04-22T13:09:30.214Z"
+                                                       }
+                                   },
+                                   {
+                                       "uuid":  "b719ad5f-1bd3-462c-941e-fe24cdb7f6ce",
+                                       "id":  17,
+                                       "shortUuid":  "U8vLVgkpH7Qg-sDF",
+                                       "username":  "tg_8100533613",
+                                       "status":  "ACTIVE",
+                                       "trafficLimitBytes":  0,
+                                       "trafficLimitStrategy":  "NO_RESET",
+                                       "expireAt":  "2126-04-09T19:51:01.409Z",
+                                       "telegramId":  8100533613,
+                                       "email":  null,
+                                       "description":  null,
+                                       "tag":  null,
+                                       "hwidDeviceLimit":  null,
+                                       "externalSquadUuid":  null,
+                                       "trojanPassword":  "4p9u1Mpgj38jXBY9keHLafH4oprBy2yd",
+                                       "vlessUuid":  "7fef1712-b04e-478a-82cd-73b414049413",
+                                       "ssPassword":  "qn_L3quCXvNELBVcBAC70fAcmsSjp_42",
+                                       "lastTriggeredThreshold":  0,
+                                       "subRevokedAt":  null,
+                                       "lastTrafficResetAt":  null,
+                                       "createdAt":  "2026-04-09T19:51:01.446Z",
+                                       "updatedAt":  "2026-04-09T19:51:01.445Z",
+                                       "subscriptionUrl":  "https://pp.komaru.sh/api/sub/U8vLVgkpH7Qg-sDF",
+                                       "activeInternalSquads":  [
+                                                                    {
+                                                                        "uuid":  "b91d682b-b8a3-4676-9d61-0a2b9962deb4",
+                                                                        "name":  "free"
+                                                                    }
+                                                                ],
+                                       "userTraffic":  {
+                                                           "usedTrafficBytes":  0,
+                                                           "lifetimeUsedTrafficBytes":  0,
+                                                           "onlineAt":  null,
+                                                           "lastConnectedNodeUuid":  null,
+                                                           "firstConnectedAt":  null
+                                                       }
+                                   },
+                                   {
+                                       "uuid":  "2f2ae7d2-a0a6-48ee-bc35-9a4558de789b",
+                                       "id":  16,
+                                       "shortUuid":  "wLCxXJa84Auz6a02",
+                                       "username":  "tg_547548298",
+                                       "status":  "ACTIVE",
+                                       "trafficLimitBytes":  0,
+                                       "trafficLimitStrategy":  "NO_RESET",
+                                       "expireAt":  "2126-04-07T22:05:14.225Z",
+                                       "telegramId":  547548298,
+                                       "email":  null,
+                                       "description":  null,
+                                       "tag":  null,
+                                       "hwidDeviceLimit":  null,
+                                       "externalSquadUuid":  null,
+                                       "trojanPassword":  "6sQ5M8Vprh8dqBMtqRjqQ20h33vLgZ5s",
+                                       "vlessUuid":  "ecc6ebb4-f28e-4e1d-9951-ac8486700048",
+                                       "ssPassword":  "PPKv7mFUb96QCL0xL4djHe4YPF02ev0X",
+                                       "lastTriggeredThreshold":  0,
+                                       "subRevokedAt":  null,
+                                       "lastTrafficResetAt":  null,
+                                       "createdAt":  "2026-04-07T22:05:14.245Z",
+                                       "updatedAt":  "2026-04-07T22:05:14.244Z",
+                                       "subscriptionUrl":  "https://pp.komaru.sh/api/sub/wLCxXJa84Auz6a02",
+                                       "activeInternalSquads":  [
+                                                                    {
+                                                                        "uuid":  "b91d682b-b8a3-4676-9d61-0a2b9962deb4",
+                                                                        "name":  "free"
+                                                                    }
+                                                                ],
+                                       "userTraffic":  {
+                                                           "usedTrafficBytes":  196848051,
+                                                           "lifetimeUsedTrafficBytes":  196848051,
+                                                           "onlineAt":  "2026-04-07T23:12:45.118Z",
+                                                           "lastConnectedNodeUuid":  "955e2b83-b61c-49a9-b03b-9178c8b55d9d",
+                                                           "firstConnectedAt":  "2026-04-07T22:06:00.170Z"
+                                                       }
+                                   },
+                                   {
+                                       "uuid":  "c0ae6e44-25d8-4d9a-b18e-70c844fa9f29",
+                                       "id":  15,
+                                       "shortUuid":  "bjM6LPkto_jsyQzh",
+                                       "username":  "tg_7981852990",
+                                       "status":  "ACTIVE",
+                                       "trafficLimitBytes":  0,
+                                       "trafficLimitStrategy":  "NO_RESET",
+                                       "expireAt":  "2126-04-07T19:55:26.937Z",
+                                       "telegramId":  7981852990,
+                                       "email":  null,
+                                       "description":  null,
+                                       "tag":  null,
+                                       "hwidDeviceLimit":  null,
+                                       "externalSquadUuid":  null,
+                                       "trojanPassword":  "-NVWg7VPP-yXXk20eSjR-RmqsDX1L7fM",
+                                       "vlessUuid":  "a4d31279-ac27-4093-abf1-eb085c4bce2f",
+                                       "ssPassword":  "RdcqxRmYgV-QSt9dEjK6j-mPN9KB-tLJ",
+                                       "lastTriggeredThreshold":  0,
+                                       "subRevokedAt":  null,
+                                       "lastTrafficResetAt":  null,
+                                       "createdAt":  "2026-04-07T19:55:26.955Z",
+                                       "updatedAt":  "2026-04-07T19:55:26.954Z",
+                                       "subscriptionUrl":  "https://pp.komaru.sh/api/sub/bjM6LPkto_jsyQzh",
+                                       "activeInternalSquads":  [
+                                                                    {
+                                                                        "uuid":  "b91d682b-b8a3-4676-9d61-0a2b9962deb4",
+                                                                        "name":  "free"
+                                                                    }
+                                                                ],
+                                       "userTraffic":  {
+                                                           "usedTrafficBytes":  2484356479,
+                                                           "lifetimeUsedTrafficBytes":  2484356479,
+                                                           "onlineAt":  "2026-04-21T17:17:00.137Z",
+                                                           "lastConnectedNodeUuid":  "955e2b83-b61c-49a9-b03b-9178c8b55d9d",
+                                                           "firstConnectedAt":  "2026-04-07T19:56:00.144Z"
+                                                       }
+                                   },
+                                   {
+                                       "uuid":  "5a778dd2-6098-4463-80dc-41493f5c81e1",
+                                       "id":  14,
+                                       "shortUuid":  "QQ0EvznrcFZy_mhg",
+                                       "username":  "tg_692295675",
+                                       "status":  "ACTIVE",
+                                       "trafficLimitBytes":  0,
+                                       "trafficLimitStrategy":  "NO_RESET",
+                                       "expireAt":  "2126-04-07T19:53:40.756Z",
+                                       "telegramId":  692295675,
+                                       "email":  null,
+                                       "description":  null,
+                                       "tag":  null,
+                                       "hwidDeviceLimit":  null,
+                                       "externalSquadUuid":  null,
+                                       "trojanPassword":  "MNt1F4BjhJPu8umUPRQ5H0v_aEF9ym0Y",
+                                       "vlessUuid":  "1424f027-a7a7-439f-a405-fae1dee5b4aa",
+                                       "ssPassword":  "WcjyhNzdYHY4fseu1WqB832KMWpnS-f1",
+                                       "lastTriggeredThreshold":  0,
+                                       "subRevokedAt":  null,
+                                       "lastTrafficResetAt":  null,
+                                       "createdAt":  "2026-04-07T19:53:40.794Z",
+                                       "updatedAt":  "2026-04-07T19:53:40.793Z",
+                                       "subscriptionUrl":  "https://pp.komaru.sh/api/sub/QQ0EvznrcFZy_mhg",
+                                       "activeInternalSquads":  [
+                                                                    {
+                                                                        "uuid":  "b91d682b-b8a3-4676-9d61-0a2b9962deb4",
+                                                                        "name":  "free"
+                                                                    }
+                                                                ],
+                                       "userTraffic":  {
+                                                           "usedTrafficBytes":  12582,
+                                                           "lifetimeUsedTrafficBytes":  12582,
+                                                           "onlineAt":  "2026-04-20T23:04:45.191Z",
+                                                           "lastConnectedNodeUuid":  "8bfdc540-8cce-4976-b0d2-b3d21c7cf47f",
+                                                           "firstConnectedAt":  "2026-04-20T23:04:30.176Z"
+                                                       }
+                                   },
+                                   {
+                                       "uuid":  "e8724e4d-56b5-4c84-bba4-17baded429f5",
+                                       "id":  13,
+                                       "shortUuid":  "xbyKo0q55-jxEWj5",
+                                       "username":  "tg_8438609447",
+                                       "status":  "ACTIVE",
+                                       "trafficLimitBytes":  0,
+                                       "trafficLimitStrategy":  "NO_RESET",
+                                       "expireAt":  "2126-04-07T18:26:20.705Z",
+                                       "telegramId":  8438609447,
+                                       "email":  null,
+                                       "description":  null,
+                                       "tag":  null,
+                                       "hwidDeviceLimit":  null,
+                                       "externalSquadUuid":  null,
+                                       "trojanPassword":  "phMon-qXw3yJq2AuF7e8Xh0eH0LXkwcP",
+                                       "vlessUuid":  "b4889699-da4e-4a35-b78d-6204f45efa1c",
+                                       "ssPassword":  "gm6KgUCcB0Zoc3AHAu65CKuFuwUb5Vaa",
+                                       "lastTriggeredThreshold":  0,
+                                       "subRevokedAt":  null,
+                                       "lastTrafficResetAt":  null,
+                                       "createdAt":  "2026-04-07T18:26:20.723Z",
+                                       "updatedAt":  "2026-04-07T18:26:20.722Z",
+                                       "subscriptionUrl":  "https://pp.komaru.sh/api/sub/xbyKo0q55-jxEWj5",
+                                       "activeInternalSquads":  [
+                                                                    {
+                                                                        "uuid":  "b91d682b-b8a3-4676-9d61-0a2b9962deb4",
+                                                                        "name":  "free"
+                                                                    }
+                                                                ],
+                                       "userTraffic":  {
+                                                           "usedTrafficBytes":  0,
+                                                           "lifetimeUsedTrafficBytes":  0,
+                                                           "onlineAt":  null,
+                                                           "lastConnectedNodeUuid":  null,
+                                                           "firstConnectedAt":  null
+                                                       }
+                                   },
+                                   {
+                                       "uuid":  "31ee5a5a-9c5d-48b3-ae2e-30a71e9c4a56",
+                                       "id":  12,
+                                       "shortUuid":  "F2Ck4vvbzhKyv7v9",
+                                       "username":  "tg_6939674301",
+                                       "status":  "ACTIVE",
+                                       "trafficLimitBytes":  0,
+                                       "trafficLimitStrategy":  "NO_RESET",
+                                       "expireAt":  "2126-04-07T18:17:15.828Z",
+                                       "telegramId":  6939674301,
+                                       "email":  null,
+                                       "description":  null,
+                                       "tag":  null,
+                                       "hwidDeviceLimit":  null,
+                                       "externalSquadUuid":  null,
+                                       "trojanPassword":  "6TWZ7ar28P_WvTqYpWq6FG7HBkTa8h1T",
+                                       "vlessUuid":  "d6bff413-7109-4546-8329-fc10f69f4f08",
+                                       "ssPassword":  "EN-1s8_bVAYKXAB3bSjehb28yKXfw9XK",
+                                       "lastTriggeredThreshold":  0,
+                                       "subRevokedAt":  null,
+                                       "lastTrafficResetAt":  null,
+                                       "createdAt":  "2026-04-07T18:17:15.847Z",
+                                       "updatedAt":  "2026-04-07T18:17:15.846Z",
+                                       "subscriptionUrl":  "https://pp.komaru.sh/api/sub/F2Ck4vvbzhKyv7v9",
+                                       "activeInternalSquads":  [
+                                                                    {
+                                                                        "uuid":  "b91d682b-b8a3-4676-9d61-0a2b9962deb4",
+                                                                        "name":  "free"
+                                                                    }
+                                                                ],
+                                       "userTraffic":  {
+                                                           "usedTrafficBytes":  0,
+                                                           "lifetimeUsedTrafficBytes":  0,
+                                                           "onlineAt":  null,
+                                                           "lastConnectedNodeUuid":  null,
+                                                           "firstConnectedAt":  null
+                                                       }
+                                   },
+                                   {
+                                       "uuid":  "3400436e-7aef-4a2c-9397-5c1c50408ac9",
+                                       "id":  11,
+                                       "shortUuid":  "r9rECJ-Xcx35zJH5",
+                                       "username":  "tg_7124594067",
+                                       "status":  "ACTIVE",
+                                       "trafficLimitBytes":  0,
+                                       "trafficLimitStrategy":  "NO_RESET",
+                                       "expireAt":  "2126-04-07T18:02:15.501Z",
+                                       "telegramId":  7124594067,
+                                       "email":  null,
+                                       "description":  null,
+                                       "tag":  null,
+                                       "hwidDeviceLimit":  null,
+                                       "externalSquadUuid":  null,
+                                       "trojanPassword":  "gH_ws9KZj6-0LmRnK6323LU0zGw2nCkp",
+                                       "vlessUuid":  "e24e1755-53dc-4a76-be97-3c3ee75cb94f",
+                                       "ssPassword":  "sxsgFWfVu_1AdGRD0AN9C9ex5jMV05U_",
+                                       "lastTriggeredThreshold":  0,
+                                       "subRevokedAt":  null,
+                                       "lastTrafficResetAt":  null,
+                                       "createdAt":  "2026-04-07T18:02:15.629Z",
+                                       "updatedAt":  "2026-04-07T18:02:15.628Z",
+                                       "subscriptionUrl":  "https://pp.komaru.sh/api/sub/r9rECJ-Xcx35zJH5",
+                                       "activeInternalSquads":  [
+                                                                    {
+                                                                        "uuid":  "b91d682b-b8a3-4676-9d61-0a2b9962deb4",
+                                                                        "name":  "free"
+                                                                    }
+                                                                ],
+                                       "userTraffic":  {
+                                                           "usedTrafficBytes":  0,
+                                                           "lifetimeUsedTrafficBytes":  0,
+                                                           "onlineAt":  null,
+                                                           "lastConnectedNodeUuid":  null,
+                                                           "firstConnectedAt":  null
+                                                       }
+                                   },
+                                   {
+                                       "uuid":  "be7a1864-8acb-44e4-af9d-a801e05b58d9",
+                                       "id":  10,
+                                       "shortUuid":  "JY55gjfSQVj2_NAT",
+                                       "username":  "admin",
+                                       "status":  "ACTIVE",
+                                       "trafficLimitBytes":  0,
+                                       "trafficLimitStrategy":  "NO_RESET",
+                                       "expireAt":  "2126-04-07T13:06:59.555Z",
+                                       "telegramId":  null,
+                                       "email":  null,
+                                       "description":  null,
+                                       "tag":  null,
+                                       "hwidDeviceLimit":  null,
+                                       "externalSquadUuid":  null,
+                                       "trojanPassword":  "L3y3nj69g9LormKdsE0tMe2kzN0jp9QY",
+                                       "vlessUuid":  "7757fe0a-eda7-4745-b233-32d4cba47239",
+                                       "ssPassword":  "o6mB72gZW8SFhUchvvx4w9SzURu0U-LB",
+                                       "lastTriggeredThreshold":  0,
+                                       "subRevokedAt":  null,
+                                       "lastTrafficResetAt":  null,
+                                       "createdAt":  "2026-04-07T13:06:59.631Z",
+                                       "updatedAt":  "2026-04-07T13:06:59.630Z",
+                                       "subscriptionUrl":  "https://pp.komaru.sh/api/sub/JY55gjfSQVj2_NAT",
+                                       "activeInternalSquads":  [
+                                                                    {
+                                                                        "uuid":  "b91d682b-b8a3-4676-9d61-0a2b9962deb4",
+                                                                        "name":  "free"
+                                                                    },
+                                                                    {
+                                                                        "uuid":  "b9f07244-8661-415e-bff5-d3a68e1fd70d",
+                                                                        "name":  "wl1_vip"
+                                                                    }
+                                                                ],
+                                       "userTraffic":  {
+                                                           "usedTrafficBytes":  290643666,
+                                                           "lifetimeUsedTrafficBytes":  290643666,
+                                                           "onlineAt":  "2026-04-14T21:25:30.140Z",
+                                                           "lastConnectedNodeUuid":  "955e2b83-b61c-49a9-b03b-9178c8b55d9d",
+                                                           "firstConnectedAt":  "2026-04-07T13:08:00.171Z"
+                                                       }
+                                   }
+                               ]
+                 }
+}

@@ -1,0 +1,218 @@
+﻿{
+    "response":  {
+                     "uuid":  "b654e528-a52a-4d12-b8b5-d56f3f748e8f",
+                     "viewPosition":  3,
+                     "name":  "xray-mirage",
+                     "config":  {
+                                    "log":  {
+                                                "error":  "/var/log/remnanode/error.log",
+                                                "access":  "/var/log/remnanode/access.log",
+                                                "loglevel":  "warning"
+                                            },
+                                    "dns":  {
+                                                "hosts":  {
+                                                              "freedns.controld.com":  "76.76.2.22"
+                                                          },
+                                                "servers":  [
+                                                                {
+                                                                    "address":  "https://freedns.controld.com/p2",
+                                                                    "skipFallback":  false
+                                                                },
+                                                                "76.76.2.2",
+                                                                "76.76.10.2"
+                                                            ],
+                                                "disableCache":  false,
+                                                "queryStrategy":  "UseIPv4",
+                                                "useSystemHosts":  false,
+                                                "disableFallback":  true
+                                            },
+                                    "inbounds":  [
+                                                     {
+                                                         "tag":  "VLESS_TCP_REALITY_MIRAGE_NL",
+                                                         "port":  443,
+                                                         "listen":  "0.0.0.0",
+                                                         "protocol":  "vless",
+                                                         "settings":  {
+                                                                          "flow":  "xtls-rprx-mirage",
+                                                                          "clients":  [
+
+                                                                                      ],
+                                                                          "decryption":  "none"
+                                                                      },
+                                                         "sniffing":  {
+                                                                          "enabled":  true,
+                                                                          "routeOnly":  false,
+                                                                          "destOverride":  [
+                                                                                               "http",
+                                                                                               "tls"
+                                                                                           ]
+                                                                      },
+                                                         "streamSettings":  {
+                                                                                "network":  "raw",
+                                                                                "security":  "reality",
+                                                                                "realitySettings":  {
+                                                                                                        "show":  false,
+                                                                                                        "xver":  0,
+                                                                                                        "target":  "www.samsung.com:443",
+                                                                                                        "spiderX":  "",
+                                                                                                        "shortIds":  [
+                                                                                                                         "1c17f1198e7aadee"
+                                                                                                                     ],
+                                                                                                        "privateKey":  "J72Q70qfQGpbUvPgnB9GJanh37SFi0Uimmc0G7jPyK0",
+                                                                                                        "serverNames":  [
+                                                                                                                            "www.samsung.com"
+                                                                                                                        ]
+                                                                                                    }
+                                                                            }
+                                                     }
+                                                 ],
+                                    "outbounds":  [
+                                                      {
+                                                          "tag":  "DIRECT",
+                                                          "protocol":  "freedom"
+                                                      },
+                                                      {
+                                                          "tag":  "BLOCK",
+                                                          "protocol":  "blackhole"
+                                                      },
+                                                      {
+                                                          "tag":  "TORRENT",
+                                                          "protocol":  "blackhole"
+                                                      }
+                                                  ],
+                                    "routing":  {
+                                                    "rules":  [
+                                                                  {
+                                                                      "ip":  [
+                                                                                 "geoip:private"
+                                                                             ],
+                                                                      "outboundTag":  "BLOCK"
+                                                                  },
+                                                                  {
+                                                                      "domain":  [
+                                                                                     "geosite:private"
+                                                                                 ],
+                                                                      "outboundTag":  "BLOCK"
+                                                                  },
+                                                                  {
+                                                                      "domain":  [
+                                                                                     "ext:geosite.dat:category-ads-all"
+                                                                                 ],
+                                                                      "outboundTag":  "BLOCK"
+                                                                  },
+                                                                  {
+                                                                      "protocol":  [
+                                                                                       "bittorrent"
+                                                                                   ],
+                                                                      "outboundTag":  "TORRENT"
+                                                                  },
+                                                                  {
+                                                                      "ip":  [
+                                                                                 "34.248.60.0/24",
+                                                                                 "46.51.178.0/24",
+                                                                                 "46.137.120.0/24",
+                                                                                 "46.137.191.0/24",
+                                                                                 "52.16.0.0/20",
+                                                                                 "52.30.63.0/24",
+                                                                                 "52.48.63.0/24",
+                                                                                 "52.215.255.0/24",
+                                                                                 "54.72.255.0/24",
+                                                                                 "35.156.63.0/24",
+                                                                                 "35.157.61.0/24",
+                                                                                 "52.28.0.0/20",
+                                                                                 "52.29.63.0/24",
+                                                                                 "52.29.125.0/25",
+                                                                                 "52.57.0.0/20",
+                                                                                 "35.176.0.0/20",
+                                                                                 "52.56.34.0/24"
+                                                                             ],
+                                                                      "outboundTag":  "DIRECT"
+                                                                  },
+                                                                  {
+                                                                      "ip":  [
+                                                                                 "geoip:ru"
+                                                                             ],
+                                                                      "outboundTag":  "DIRECT"
+                                                                  },
+                                                                  {
+                                                                      "domain":  [
+                                                                                     "geosite:category-ru"
+                                                                                 ],
+                                                                      "outboundTag":  "DIRECT"
+                                                                  },
+                                                                  {
+                                                                      "inboundTag":  [
+                                                                                         "VLESS_TCP_REALITY_MIRAGE_NL"
+                                                                                     ],
+                                                                      "outboundTag":  "DIRECT"
+                                                                  },
+                                                                  {
+                                                                      "inboundTag":  [
+                                                                                         "VLESS_XHTTP_CDN_WL1"
+                                                                                     ],
+                                                                      "outboundTag":  "DIRECT"
+                                                                  }
+                                                              ],
+                                                    "domainStrategy":  "IPIfNonMatch"
+                                                }
+                                },
+                     "inbounds":  [
+                                      {
+                                          "uuid":  "b6983d93-5d96-4b94-959a-08deb88a51ee",
+                                          "profileUuid":  "b654e528-a52a-4d12-b8b5-d56f3f748e8f",
+                                          "tag":  "VLESS_TCP_REALITY_MIRAGE_NL",
+                                          "type":  "vless",
+                                          "network":  "raw",
+                                          "security":  "reality",
+                                          "port":  443,
+                                          "rawInbound":  {
+                                                             "tag":  "VLESS_TCP_REALITY_MIRAGE_NL",
+                                                             "port":  443,
+                                                             "listen":  "0.0.0.0",
+                                                             "protocol":  "vless",
+                                                             "settings":  {
+                                                                              "flow":  "xtls-rprx-mirage",
+                                                                              "clients":  [
+
+                                                                                          ],
+                                                                              "decryption":  "none"
+                                                                          },
+                                                             "sniffing":  {
+                                                                              "enabled":  true,
+                                                                              "routeOnly":  false,
+                                                                              "destOverride":  [
+                                                                                                   "http",
+                                                                                                   "tls"
+                                                                                               ]
+                                                                          },
+                                                             "streamSettings":  {
+                                                                                    "network":  "raw",
+                                                                                    "security":  "reality",
+                                                                                    "realitySettings":  {
+                                                                                                            "show":  false,
+                                                                                                            "xver":  0,
+                                                                                                            "target":  "www.samsung.com:443",
+                                                                                                            "spiderX":  "",
+                                                                                                            "shortIds":  [
+                                                                                                                             "1c17f1198e7aadee"
+                                                                                                                         ],
+                                                                                                            "privateKey":  "J72Q70qfQGpbUvPgnB9GJanh37SFi0Uimmc0G7jPyK0",
+                                                                                                            "serverNames":  [
+                                                                                                                                "www.samsung.com"
+                                                                                                                            ]
+                                                                                                        }
+                                                                                }
+                                                         }
+                                      }
+                                  ],
+                     "nodes":  [
+                                   {
+                                       "uuid":  "955e2b83-b61c-49a9-b03b-9178c8b55d9d",
+                                       "name":  "🇳🇱 Netherlands Node #1",
+                                       "countryCode":  "NL"
+                                   }
+                               ],
+                     "createdAt":  "2026-04-22T19:19:38.167Z",
+                     "updatedAt":  "2026-04-22T19:19:38.136Z"
+                 }
+}
